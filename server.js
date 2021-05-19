@@ -1,4 +1,5 @@
 $().ready(function() {
-   console.log("damn");
-   $("#test").html("Hello World");
+   $.getJSON( "/courts.json", function( data ) {    
+    $("#test").html(data);
+  });
 });
