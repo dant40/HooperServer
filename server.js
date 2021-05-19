@@ -1,1 +1,3 @@
-document.getElementById("test").innerHTML = "Hello World";
+$().ready(function() {
+   $("#test").html("Hello World");
+});
