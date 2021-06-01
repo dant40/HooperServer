@@ -3,6 +3,6 @@ $().ready(function() {
    console.log(urlParams.toString());
    $.getJSON( "courts.json", function( data ) {   
       console.log(data);
-    $("#test").html(data);
+   
   });
 });
