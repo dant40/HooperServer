@@ -10,8 +10,9 @@ $().ready(function() {
       var resObject = new Object();
       var distances = [];
       var dist;
-      $.each(data, function(index, item){
-         console.log(item);
+      for(let i = 0; i < data.length;i++){
+         console.log(data[i]);
+         let item = data[i]
          console.log(item.latitude);
          console.log(item["latitude"]);
             let x = item["latitude"] - lat;
@@ -20,7 +21,7 @@ $().ready(function() {
             y *= y;
             dist = Math.sqrt(x + y);
             distances.push(dist);
-      });
+      }
       console.log(distances);
       //return resOjbect;
   });
