@@ -9,11 +9,10 @@ $().ready(function() {
       var resObject = new Object();
       var distances = [];
       var dist;
-      console.log(data)
-      for(var i = 0; i < data.length;i++){
-         
-         let item = data[i];
-         console.log(item.latitude);
+      console.log(data["courts"])
+      var courts = data["courts"];
+      for(var i = 0; i < courts.length;i++){
+         let item = courts[i];
          console.log(item["latitude"]);
             let x = item["latitude"] - lat;
             x *= x;
