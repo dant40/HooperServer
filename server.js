@@ -22,9 +22,7 @@ $().ready(function() {
             tempObj.index = i;
             distances.push(tempObj);
       }
-      distances.sort(function (a, b) {
-        return a.distance - b.distance;
-      });
+      distances.sort((a, b) =>  (a.distance - b.distance) );
          
       console.log(distances);
       //return resOjbect;
