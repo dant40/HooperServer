@@ -9,9 +9,13 @@ $().ready(function() {
       var resObject = new Object();
       var distances = [];
       var dist;
-      for(let i = 0; i < data.length;i++){
+      console.log(data.length)
+      console.log(typeof(data))
+      for(var i = 0; i < data.length;i++){
+         console.log("test2");
+         console.log(data);
          console.log(data[i]);
-         let item = data[i]
+         let item = data[i];
          console.log(item.latitude);
          console.log(item["latitude"]);
             let x = item["latitude"] - lat;
