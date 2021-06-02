@@ -23,7 +23,8 @@ $().ready(function() {
             distances.push(tempObj);
       }
       distances.sort(function (a, b) {
-         return a.distance - b.distance;});
+        return a.distance - b.distance;
+      });
          
       console.log(distances);
       //return resOjbect;
