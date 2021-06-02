@@ -24,9 +24,9 @@ $().ready(function() {
       }
       distances.sort((a, b) =>  (a.distance - b.distance) );
       
-      resObject.push(courts[distances[0].index]);
-      resObject.push(courts[distances[1].index]);
-      resObject.push(courts[distances[2].index]);
+      resObject.first = courts[distances[0].index]
+      resObject.second = courts[distances[1].index]
+      resObject.third = courts[distances[2].index]
       console.log(resObject);
       return resOjbect;
   });
