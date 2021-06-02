@@ -11,6 +11,9 @@ $().ready(function() {
       var distances = [];
       var dist;
       $.each(data, function(index, item){
+         console.log(item);
+         console.log(item.latitude);
+         console.log(item["latitude"]);
             let x = item["latitude"] - lat;
             x *= x;
             let y = item["longitude"] - long;
