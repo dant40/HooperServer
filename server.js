@@ -3,7 +3,7 @@ $().ready(function() {
    //remember: decimal point => %2E
    var lat = parseFloat(urlParams.get("lat"));
    var long = parseFloat(urlParams.get("long"));
-   console.log("test4");
+   console.log("test5");
    
    $.getJSON( "courts.json", function( data ) {   
       var resObject = new Object();
@@ -23,8 +23,11 @@ $().ready(function() {
             distances.push(tempObj);
       }
       distances.sort((a, b) =>  (a.distance - b.distance) );
-         
-      console.log(distances);
-      //return resOjbect;
+      
+      resObject.push(courts[distances[0].index]);
+      resObject.push(courts[distances[1].index]);
+      resObject.push(courts[distances[2].index]);
+      console.log(resObject);
+      return resOjbect;
   });
 });
