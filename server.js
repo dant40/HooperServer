@@ -28,6 +28,6 @@ $().ready(function() {
       resObject.second = courts[distances[1].index]
       resObject.third = courts[distances[2].index]
       console.log(resObject);
-      return resOjbect;
+      return resObject;
   });
 });
