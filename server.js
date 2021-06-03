@@ -3,7 +3,7 @@ $().ready(function() {
    //remember: decimal point => %2E
    var lat = parseFloat(urlParams.get("lat"));
    var long = parseFloat(urlParams.get("long"));
-   console.log("test7");
+   console.log("test8");
    
    $.getJSON( "courts.json", function( data ) {   
       var resObject = new Object();
@@ -27,7 +27,7 @@ $().ready(function() {
       resObject.first = courts[distances[0].index]
       resObject.second = courts[distances[1].index]
       resObject.third = courts[distances[2].index]
-      console.log(resObject);
-      return resObject;
+   
+      $('#content').text(JSON.stringify(resObject)); 
   });
 });
